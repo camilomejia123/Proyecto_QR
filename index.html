@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto | Asesoría Jurídica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --azul-principal: #1e3a5f;
+      --azul-secundario: #274c77;
+      --gris-fondo: #eef2f6;
+      --gris-texto: #475569;
+      --blanco: #ffffff;
+      --sombra: 0 10px 30px rgba(0,0,0,0.12);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, Arial, sans-serif;
+      background: var(--gris-fondo);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* CONTENEDOR PRINCIPAL */
+    .container {
+      width: 90%;
+      max-width: 420px;
+    }
+
+    /* HEADER */
+    .header {
+      background: linear-gradient(135deg, var(--azul-principal), #0f1f33);
+      padding: 40px 20px 60px;
+      border-radius: 20px 20px 0 0;
+      text-align: center;
+      box-shadow: var(--sombra);
+      position: relative;
+    }
+
+    /* CONTENEDOR DEL LOGO */
+    .logo-container {
+    background: white;
+    width: 200px;      /* antes 110px */
+    height: 200px;     /* antes 110px */
+    border-radius: 54px;
+    padding: 15px;
+    box-shadow: var(--sombra);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -75px;     /* ajustado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 26px;
+    }
+
+    /* TARJETA */
+    .card {
+    background: var(--blanco);
+    padding: 100px 25px 25px;  /* antes 80px */
+    border-radius: 0 0 20px 20px;
+    box-shadow: var(--sombra);
+    text-align: center;
+    }
+
+    .card h1 {
+      margin: 0;
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: var(--azul-principal);
+    }
+
+    .card p {
+      color: var(--gris-texto);
+      margin-top: 8px;
+      margin-bottom: 25px;
+      font-size: 15px;
+    }
+
+    /* BOTONES */
+    .btn {
+      display: block;
+      text-decoration: none;
+      padding: 14px;
+      margin: 12px 0;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      color: white;
+      background: var(--azul-principal);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: all 0.25s ease;
+    }
+
+    .btn:hover {
+      background: var(--azul-secundario);
+      transform: translateY(-2px);
+    }
+
+    .btn.whatsapp {
+      background: #15803d;
+    }
+
+    .btn.whatsapp:hover {
+      background: #166534;
+    }
+
+    .btn.instagram {
+      background: #1d4ed8;
+    }
+
+    .btn.instagram:hover {
+      background: #1e40af;
+    }
+
+    .btn.gmail {
+      background: #374151;
+    }
+
+    .btn.gmail:hover {
+      background: #1f2937;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #64748b;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <div class="logo-container">
+        <img src="image.png" alt="Logo">
+      </div>
+    </div>
+
+    <div class="card">
+
+      <h1>Asesoría en civil, penal, transporte y otras àreas</h1>
+
+      <p>
+        Seleccione el medio por el cual desea recibir asesorìa legal
+      </p>
+
+      <a href="https://w.app/tsyen8" 
+         class="btn whatsapp" target="_blank">
+        WhatsApp
+      </a>
+
+      <a href="mailto:asesoriasjuridicasandrewgm@gmail.com"
+         class="btn gmail">
+        Correo electrónico
+      </a>
+
+      <a href="https://www.instagram.com/abogadoandrewgiraldomejia" 
+         class="btn instagram" target="_blank">
+        Instagram
+      </a>
+
+      <footer>
+        Atención profesional y confidencial
+      </footer>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
