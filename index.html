@@ -65,10 +65,20 @@
     border-radius: 26px;
     }
 
+    /* número de teléfono en el header, centrado bajo el logo */
+    /* número de teléfono dentro de la tarjeta, debajo del logo pero encima del título */
+    .phone {
+      margin: 0 0 15px; /* espacio debajo antes del h1 */
+      font-size: 16px;
+      color: var(--gris-texto);
+      font-weight: 600;
+      text-align: center;
+    }
+
     /* TARJETA */
     .card {
     background: var(--blanco);
-    padding: 100px 25px 25px;  /* antes 80px */
+    padding: 90px 25px 25px;  /* aumentada para dejar espacio al logo y número */
     border-radius: 0 0 20px 20px;
     box-shadow: var(--sombra);
     text-align: center;
@@ -83,7 +93,6 @@
 
     .card p {
       color: var(--gris-texto);
-      margin-top: 8px;
       margin-bottom: 25px;
       font-size: 15px;
     }
@@ -150,12 +159,13 @@
         <img src="image.png" alt="Logo">
       </div>
     </div>
+    
 
     <div class="card">
+      <!-- número de teléfono, ubicado debajo de la caja del logo y encima del título -->
+      <p class="phone">Cel: 318 827 1903</p>
 
       <h1>Asesoría en civil, penal, transporte y otras áreas</h1>
-
-      <p>Cel: 318 827 1903</p>
 
       <p>
         Seleccione el medio por el cual desea recibir asesoría legal
